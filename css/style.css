@@ -1,0 +1,582 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* ----------- NAVBAR --------------- */
+
+    .navbar {   
+        position: fixed;
+        z-index: 999;
+        width: 100%;
+        padding: 20px 0;
+        /* background: crimson; */
+        font-family:  'Roboto', sans-serif;
+        transition: all 0.3s ease;
+        border: 1px solid white;
+        background-color: white;
+        opacity: .8;
+    }
+
+    .navbar .max-width {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+
+    .navbar .max-width .logo {
+        width: 70%;
+        display: block;
+    }
+
+    .navbar .max-width .logo img {
+        width: 35%;
+    }
+
+    .navbar .links {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .navbar .links li {
+        list-style: none;
+        display: inline-block;
+    }
+
+    .navbar .links li a {
+        text-decoration: none;
+        color: lightgray;
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'Roboto', sans-serif;
+        margin: 0 10px;
+    }
+
+    .links li a:hover {
+        color: rgb(0,197,155);
+    }
+    /* ----------- NAVBAR --------------- */
+
+    /* ----------- MAIN ----------------- */
+
+    .container{
+        padding: 10%;
+        width: 100%;
+    }
+    .info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .doc-logo {
+       display:flex;
+       justify-content: center;
+       margin: 10px;
+    }
+
+    .info h1 {
+        text-align: center;
+        width: 100%;
+        font-size: 2.15rem;
+        font-weight: 300;
+        letter-spacing: -.3px;
+        margin: 30px 10px;
+        color: #00b39b;
+        font-family: 'Work Sans', sans-serif;
+
+    }
+
+    .info .discreption {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: left;
+        margin-left: 8%;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .info .discreption .discreption-left {
+        width: 50%;
+    }
+
+    .info .discreption .discreption-right {
+        width: 50%;
+    }
+
+    .info .discreption p {
+        font-family:  'Roboto', sans-serif;
+        font-weight: bold;
+        line-height: 1.75;
+        color: #747474;
+        font-size: 16px;
+    }
+
+
+
+
+
+    .service {
+        display: grid;
+        margin: 30px 0;
+        width: 100%;
+        grid-template-columns: 350px 350px 350px;
+        justify-content: space-around;
+        align-content: center;
+        transition: all 0.35s ease;
+    }
+
+    .service .patients {
+        background: #00b39b;
+        height: 375px;
+        padding: 15px 20px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 500;
+        margin-left:6%;
+    }
+
+
+    .service .patients h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        padding-top: 15px;
+        margin-left:6%;
+        color: white;
+    }
+
+    .service .patients h2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        padding-top: 15px;
+        margin-left:6%;
+        margin-bottom: 45px;
+        color: white;
+        font-weight: 300;
+    }
+
+    .service .service-country {
+        margin-top: 20px;
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        outline: 0;
+        background: none;
+        border: 0;
+        font-family: 'Roboto',Arial,sans-serif;
+        font-weight: 400;
+        letter-spacing: .04em;
+        font-size: 1.2rem;
+        text-align: center;
+}
+
+    .service .service-country .country {
+        width: 100%;
+        padding: 3%;
+        color: #fff;
+        font-size: 20px;
+        border: none;
+        background-color: inherit;
+        text-transform: none;
+        text-decoration: underline;
+        cursor: pointer;  
+    }
+
+    select:not(:-internal-list-box) {
+        overflow: visible !important;
+    }
+
+    .service .doctors {
+        background: #3d83df;
+        height: 375px;
+        padding: 15px 20px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 500;
+        margin-left:6%;
+    }
+
+
+    .service .doctors h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        padding-top: 15px;
+        margin-left:6%;
+        color: white;
+    }
+
+    .service .doctors h2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        padding-top: 15px;
+        margin-left:6%;
+        margin-bottom: 45px;
+        color: white;
+        font-weight: 300;
+    }
+
+
+    .service .clinics {
+        background: #1b2734;
+        height: 375px;
+        padding: 15px 20px;
+        border-radius: 10px;
+        font-size: 20px;
+        font-weight: 500;
+        margin-left:6%;
+    }
+
+
+    .service .clinics h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        font-weight: bold;
+        padding-top: 15px;
+        margin-left:6%;
+        color: white;
+    }
+
+    .service .clinics h2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 25px;
+        padding-top: 15px;
+        margin-left:6%;
+        margin-bottom: 45px;
+        color: white;
+        font-weight: 300;
+    }
+
+    .service .service-country .country-1,  .service .service-country .country-2 {
+        width: 100%;
+        padding: 3%;
+        border: none;
+        margin-bottom: 10px;
+        color: #fff;
+        font-size: 20px;
+        background-color: inherit;
+        text-transform: none;
+        text-decoration: underline;
+        cursor: pointer;  
+    }
+
+
+
+
+    .brands {
+        width: 100%;
+        margin: 2.5rem auto 3.125rem;
+        display: flex;
+    }
+
+    .brands h1 {
+        float: left;        
+        font-family: Work Sans,Arial,sans-serif;  
+        width: 33%;
+        font-weight: 300;
+        font-size: 1.625em;
+        margin: .25em 0 .35em 5%;
+        padding-right: 1em;
+        color: rgb(0,197,155);
+    }
+
+    .address {
+        float: right;
+        display: flexbox;
+        flex-direction: column;
+        width: 67%;
+    }
+
+    .address ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        list-style: none;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 10;
+        overflow: hidden;
+    }
+
+    .address ul li {
+        font-size: 1rem;
+        padding: 5px 5px;
+    }
+
+    .address ul li a {
+        display: inline-block;
+        text-decoration: none;
+        color: rgb(196,196,196);
+        font-size: 18px;
+        font-weight: bold;
+        font-family: 'Work Sans', Arial, sans-serif;
+    }
+
+    .address ul li img {
+        height: 22px;
+    }
+
+    .address ul li a:hover {
+        color: rgb(0,197,155);
+
+    }
+
+    .address ul li .adress-link img {
+        height: 25px;
+        width: 130px;
+    }
+
+
+
+
+    .stats-container {
+        background-image: linear-gradient(-45deg,rgba(0,204,177,.01) 5%,rgba(61,199,223,.1));
+        background: #e5faf8;
+        position: relative;
+        margin: 30px 0;
+        width: 100%;
+        border-radius: 2px;
+        display: flex;
+        padding: 4%;
+        overflow: hidden;
+    }
+    .introduction-box {
+        width: 40%;
+    }
+    .introduction-box h1 {
+        color: rgb(0,177,159);
+        font-family: 'Work Sans', Arial, sans-serif;
+        font-size: 2.125rem;
+        font-weight: 300;
+        margin-bottom: 7%;
+    }
+    .introduction-box p {
+        max-width: 415px;
+        font-family: 'Work Sans', Arial, sans-serif;
+        color: #747474;
+        font-size: .875em;
+        font-weight: bold;
+        line-height: 1.7142857143;
+    }
+    .introduction-logo img {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+
+    .stats {
+        text-align: center;
+        width: 60%;
+        margin: 0 4% 0 19%;
+    }
+
+    .stats-colomn-1 {
+        display: flex;
+    }
+
+    .stats-colomn-2 {
+        display: flex;
+    }
+
+    .stats-box {
+            height: 265px;
+            background-color: white;
+            border-radius: 7%;
+            width: 45%;
+            margin-right: 5%;
+    }
+
+    .stats-box-logo{
+        margin: 15px 0;
+    }
+
+    .stats-colomn-1 .box-1 {
+        margin-top: 20px;
+    }
+
+    .stats-colomn-2 .box-3 {
+        margin-top: 20px;
+    }
+
+    .stats h3 {
+        font-size: 1.8em;
+        color: #00b39b;
+        margin: .5em 0;
+        font-family: 'Work Sans', Arial, sans-serif;
+        font-weight: 300;
+        letter-spacing: -.3px;
+    }
+    .stats p {
+        font-weight: 400;
+        font-family: Roboto,Arial,sans-serif;
+        color: #747474;
+    }
+        
+
+
+    
+    .offices {
+        margin: 50px 0;
+    }
+    .offices-description {
+        text-align: center;
+        margin: 20px 0 35px 0;
+    }
+    .offices-description h1 {
+        color: rgb(0,197,155);
+        font-family: 'Work Sans', Arial, sans-serif;
+        font-size: 1.9622345em;
+        font-weight: 300;
+        margin: 20px 0;
+    }
+    .offices-description p {
+        text-align: center;
+        color: black;
+        line-height: 1.414236;
+        opacity: 0.7;
+    }
+
+    .offices-worldwide {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .offices-worldwide img {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .offices-colomn-1 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .offices-colomn-2 {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 3%;
+    }
+
+    .offices-colomn-3{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 3%;
+        margin-left: 3%;
+    }
+
+    .offices-colomn-1 h1 {
+        font-family: 'Work Sans', Arial, sans-serif;
+        font-size: 1.125em;
+        font-weight: 400;
+        line-height: 1.6666666667;
+        padding: 1.1111111111em;
+    }
+    .offices-box h2 {
+        font-family: 'Work Sans', Arial, sans-serif;
+        font-size: 1.125em;
+        font-weight: 400;
+        line-height: 1.6666666667;
+        padding: 1.1111111111em;
+    }
+
+    .opening-information {
+        text-align: right;
+        margin-top: -17%;
+    }
+
+    .opening-information  input{
+        display: inline-block;
+        border-radius: 4px;
+        background: #3d83df;
+        font-family: Roboto,Arial,sans-serif;
+        line-height: 1em;
+        font-size: .625rem;
+        padding: 1em 1.5em;
+        color: #fff;
+        font-weight: 700;
+        letter-spacing: .04em;
+        text-align: center;
+        text-transform: uppercase;
+        transition: all .2s ease 0s;
+        height: 31px;
+    }
+
+    .join {
+        width: 100%;
+        margin-top: 80px;
+        display: flexbox;
+        justify-content: center;
+    }
+
+    .join h1 {
+        font-family: Work Sans,Arial,sans-serif;
+        font-weight: 300;
+        font-size: 2.1428571429em;
+        text-align: center;
+        color: #333;
+        margin-bottom: .75em;
+    }
+
+    .join .div-btn {
+        display: flex;
+        justify-content: center;  
+    }
+
+    .join .btn input {
+        display: inline-block;
+        border-radius: 4px;
+        background: #3d83df;
+        font-family: Roboto,Arial,sans-serif;
+        line-height: 1em;
+        font-size: .925rem;
+        color: #fff;
+        font-weight: 800;
+        letter-spacing: .04em;
+        text-align: center;
+        text-transform: uppercase;
+        transition: all .2s ease 0s;
+        height: 40px;
+        width: 250px;
+    }
+
+    /* ----------- MAIN ----------------- */
+
+    /* ----------- FOOTER --------------- */
+    footer {
+       margin-top: 30px;
+       text-align: center;
+       display: block;
+       opacity: .7;
+       border-top: 1px solid #eef2f2;
+       padding: 1em 0;
+   }
+
+   .offices-country {
+       font-size: 14px;
+       color: #ababab;
+       margin-bottom: .4em;
+       font-weight: 400;
+       font-family: Roboto,Arial,sans-serif;
+   }
+
+   .offices-country a {
+    text-decoration: none;
+    color: #3d83df;
+    outline: 0;
+    transition: all .2s ease 0s;
+    font-family: Roboto,Arial,sans-serif;
+}
+
